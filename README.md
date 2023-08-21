@@ -1,3 +1,5 @@
+[![Proximity CI](https://github.com/Carlos231/proximity/actions/workflows/proximity.yml/badge.svg)](https://github.com/Carlos231/proximity/actions/workflows/proximity.yml)
+
 # Proximity
 
 Proximity a React Native Application that allows you to have proximity chat.
