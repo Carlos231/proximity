@@ -86,7 +86,21 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 <!-- Explain how to run tests in a React Native context. You may also include information about the testing framework you use for React Native. -->
 
-In development
+Manually run tests:
+
+```bash
+  # active development of tests, watch files for changes and re-runs all tests
+  npm run test
+
+  # debug, console.logs and only re-runs the file that was changed
+  npm run testDebug
+
+  # displays code coverage in cli and updates the code coverage html
+  npm run testFinal
+
+  # when a screen/component is updated, the test snapshots will throw an error, this updates them
+  npm run updateSnapshots
+```
 
 ## License
 

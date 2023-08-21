@@ -8,11 +8,13 @@ on:
   push:
     branches: "**"
     # branches: ["main", "development"]
-#   pull_request:
-#     branches: ["main", "development"]
+  #   pull_request:
+  #     branches: ["main", "development"]
+  # to run workflow manually
+  workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     strategy:
@@ -28,7 +30,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm install --force
-      - run: npx expo start
+      # - run: npx expo start
       # - run: npm ci
       # - run: npm run build --if-present
-      # - run: npm test
+      - run: npm run testFinal
+
+      # deploy web
+      # npx expo export:web
+      # cd web-build/
+      # # starts web at 3000
+      # npx serve
