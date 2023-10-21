@@ -27,13 +27,13 @@ Install dependencies:
 ```bash
 #If using npm:
 npm install
+npm install react-native-web
 
 # If using yarn:
 yarn install
 ```
 
 Start development server:
-
 ```bash
 npx expo start
 ```
