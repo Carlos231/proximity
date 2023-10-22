@@ -34,6 +34,7 @@ yarn install
 ```
 
 Start development server:
+
 ```bash
 npx expo start
 ```
